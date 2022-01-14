@@ -15,7 +15,7 @@ node {
 
 	stage("test"){
 		app.inside {
-            sh "npm --prefix ./sources/ run test"
+            sh "npm --prefix ./ run test"
             sh "echo 'running addional test'"
             sh "echo 'passed'"
 		}
